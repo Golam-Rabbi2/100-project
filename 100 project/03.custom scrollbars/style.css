@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: brown;
+  padding: 40px;
+}
+
+.content {
+  width: 50%;
+  height: 180px;
+  margin: 0 auto;
+  border: 2px solid snow;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: azure;
+}
+h1 {
+  text-align: center;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(180deg, #a10d0d, #3c0a0a);
+}
+::-webkit-scrollbar-track {
+  background: brown; /* IMPORTANT: set track transparent here */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2da90b, #250fcb);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a10d0d, #3c0a0a);
+}
