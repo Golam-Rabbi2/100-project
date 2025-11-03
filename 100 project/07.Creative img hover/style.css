@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: bisque;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 30rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.img1 {
+  height: 100%;
+  width: 100%;
+  background-position: cover;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* padding: 2rem; */
+
+  align-items: center;
+  color: white;
+  background-color: rgb(23, 23, 23);
+  /* opacity: 0; */
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+.container:hover .content {
+  transform: translateX(0);
+}
+
+.container:hover .img1 {
+  transform: translateX(100%);
+}
